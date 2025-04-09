@@ -1,0 +1,40 @@
+html
+{
+background-color: rgba(208, 209, 210, 0.824);
+}
+
+
+h1 {
+    
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    width:auto;
+    height: 100px;
+    background-color: #7c8080;
+    align-items: center;
+    box-shadow: 2px 5px 5px;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+    
+    
+}
+
+.conteneur
+{
+ 
+height: 35px;
+display: flex;
+justify-content: center;
+background-color: #8b999b;
+align-items: center;
+box-shadow: 3px 3px 4px black;
+}
+p {
+    margin:16px;
+}
+li {
+    padding: 2px 2px;
+    list-style: none;
+    margin: 15px;
+}
