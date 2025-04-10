@@ -76,6 +76,10 @@ button{
 
 col {
     column-count: 2;
+<<<<<<< HEAD
+  }
+  
+=======
     display: flex;
   }
 
@@ -124,3 +128,4 @@ img {
   border-radius: 3px;
   background-color: #8ebf42;
 }
+>>>>>>> 21fcbfad47a0ac3862d20e66e38c1fb4cb548434

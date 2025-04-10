@@ -1,19 +1,25 @@
-body {
-  font-family: 'Georgia', serif;
-  background-color: #fff;
-  color: #111;
-  margin: 0;
-  padding: 0;
-  line-height: 1.8;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+:root{
+  --1er-color: #c7b299;
+  --btn : #098bf567;
 }
 
-.w3-container {
-  max-width: 700px;
-  width: 90%;
-  margin: 60px auto;
+body {
+  font-family: 'Arial', sans-serif;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn{
+  background-color: var(--btn);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 15px;
+  transition: background-color 0.3s ease;
+  margin: 10px 0;
   text-align: center;
 }
 
@@ -22,8 +28,14 @@ h1 {
   letter-spacing: 0.15em;
   font-weight: normal;
   margin-bottom: 20px;
-  color: #0d83e4;
-  text-shadow: 1px 1px 2px rgba(241, 6, 6, 0.986);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 1.2;
+  padding: 10px;
+  background-color:#c7b299;
+  border-radius: 5px;
 }
 
 
@@ -32,6 +44,10 @@ b {
   color: #3b4c5a;
 }
 
+::placeholder {
+  color: #999;
+  text-align: center;
+}
 
 button{
   background-color: #3b4c5a;
@@ -44,8 +60,8 @@ button{
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #1577da;
+.btn:hover {
+  background-color: #ce962f71;
 }
 
 p {
@@ -62,7 +78,7 @@ p a {
 #contact {
   background-color: #f4f4f4;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 25px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   margin: 20px 0;
   width: 100%;
@@ -75,8 +91,43 @@ p a {
   font-weight: normal;
   border: 1px solid #ccc;
   transition: border-color 0.3s ease;
+  background-color: var(--1er-color);
 
 }
 
+input[type="text"], input[type="email"], textarea {
+  width: auto;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
 
-
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+  p {
+    font-size: 1em;
+  }
+  button {
+    font-size: 0.9em;
+    padding: 8px 16px;
+  }
+  input[type="text"], input[type="email"], textarea {
+    width: calc(100% - 20px);
+    font-size: 0.9em;
+  }
+  #contact {
+    font-size: 0.9em;
+    padding: 15px;
+  }
+  .w3-container {
+    width: 95%;
+  }
+  body {
+    padding: 10px;
+  }
+  
+}
