@@ -1,3 +1,79 @@
+*,::after, ::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+
+nav {
+  position: relative;
+
+  width: 100%;
+  color: rgb(31, 33, 29);
+  background: linear-gradient(to right, rgb(239, 250, 205), rgb(233, 234, 228));
+}
+
+ul{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style: none;
+  margin-right: 2rem; 
+  height: 50px;
+ 
+}
+
+
+li{
+  font-weight: 600;
+  font-size: 2rem;
+  margin: 1rem auto;
+  
+}
+
+
+button{
+  padding: 0.5rem;
+  /* margin-left: 90%; */
+  position: absolute;
+  right: 0.5rem;
+  top: 0.3rem;
+  display: none;
+}
+
+
+@media ( width <= 650px){
+
+
+
+  ul{
+      background: linear-gradient(90deg, gray orange);
+      flex-direction: column;
+      width: 100%;
+      display: none;
+     
+  }
+
+  ul.menu-responsive{
+      display: block;
+  }
+
+  li{
+      font-weight: 600;
+      font-size: 1.5rem;
+      margin: 0.3rem auto;
+      color: burlywood;
+      text-align: center;
+  }
+
+  button {
+      display: block;
+  }
+
+}
+
 col {
     column-count: 2;
     display: flex;
@@ -41,14 +117,6 @@ img {
  /* align-items: center; */
 }
 
-
-.flex-container {
-  display: flex;
-  align-items: center; /* Use another value to see the result */
-  width: 100%;
-  height: 200px;
-  background-color: #1faadb;
-}
 .flex-container > div {
   width: 25%;
   height: 60px;
